@@ -1,0 +1,64 @@
+Pseudocode
+
+Greg starts with $100 cash and $500 in the bank
+
+The program displays the menu with Gregs cash and bank balance:
+    [G]amble, [B]anking, [R]esults of each race, [L]eave the dog track
+
+Ask Greg for his choice:
+
+    If
+        when the choice is G then
+        Ask Greg for his wager
+
+        If
+            when the wager is less than 0 or more than his cash then
+            Tell Greg the bet is invalid
+
+        Else
+            Display the dogs with their payout and odds
+            
+
+            If
+                when the pick is less than 1 or greater than 9 then
+                Tell Greg the choice is invalid
+
+            Else
+                Generate a random number from 1 to 100
+                Display the winner
+                Save the pick, winner, and wager in the race log
+
+                If
+                    when the pick is the winner then
+                    Add wager times payout to Gregs cash
+
+                Else
+                    Subtract the wager from Gregs cash
+
+    Else If
+        when the choice is B then
+        Ask Greg to withdraw or deposit and how much
+
+
+    Else If
+        when the choice is R then
+        Display the pick, winner, and wager of each saved race
+
+    Else If
+        when the choice is L then
+        Display that the program ended
+
+    Else
+        Tell Greg that is not a choice
+
+Check if Greg chose to leave:
+
+    If
+        when the choice is not L then
+        repeat the menu with the updated cash, bank, and race count
+
+    Else
+        stop repeating
+
+When the program exits:
+    Convey that the program has ended.
